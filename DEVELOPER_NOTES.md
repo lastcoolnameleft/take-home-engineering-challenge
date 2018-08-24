@@ -2,8 +2,8 @@
 
 ## Requirements
 
-* [https://php.net](PHP 7+)
-* [https://getcomposer.org/download/](Composer)
+* [PHP](https://php.net/)
+* [Composer](https://getcomposer.org/download/)
 
 ## Design considerations
 
