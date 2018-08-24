@@ -1,4 +1,6 @@
 <?php
+declare(strict_types=1);
+
 const TRUCK_ID_COL=0;
 const TRUCK_NAME_COL=1;
 const TRUCK_LAT=14;
