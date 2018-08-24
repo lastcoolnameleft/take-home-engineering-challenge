@@ -12,7 +12,4 @@ While not as "sexy" as Python, Node, etc. it is the 5th most popular language by
 
 ## Feature Request list
 
-* Allow user to specify location instead of lat/lon
-  * https://developers.google.com/maps/documentation/geocoding/intro
-* Allow user to not specify location which looks up lat/long by IP
-  * http://ip-api.com/docs/api:json 
+Features are tracked here: https://github.com/lastcoolnameleft/take-home-engineering-challenge/issues
