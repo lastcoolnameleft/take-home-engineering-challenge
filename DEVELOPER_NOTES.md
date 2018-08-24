@@ -2,7 +2,8 @@
 
 ## Requirements
 
-* PHP 7+
+* [https://php.net](PHP 7+)
+* [https://getcomposer.org/download/](Composer)
 
 ## Design considerations
 
@@ -13,3 +14,18 @@ While not as "sexy" as Python, Node, etc. it is the 5th most popular language by
 ## Feature Request list
 
 Features are tracked here: https://github.com/lastcoolnameleft/take-home-engineering-challenge/issues
+
+## Dev Env setup
+
+```shell
+composer install
+```
+
+## Running Unit Tests
+
+Tests are run by PHPUnit
+
+```shell
+cd test
+../vendor/bin/phpunit  distanceTest.php
+```
