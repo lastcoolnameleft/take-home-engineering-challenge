@@ -32,6 +32,7 @@ final class DistanceTest extends TestCase
     // Because formula is accurate to 5 decimal places, we should ensure value is inside range instead of exact value
     public function testDistance(): void
     {
+        # Validated with 3rd party tool: https://andrew.hedges.name/experiments/haversine/
         $result = distance(37.7678524427181, -122.430449785949, 37.7678524427181, -122.416104892532);
         $this->assertTrue($result > 0.78 && $result < 0.79);
         

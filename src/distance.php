@@ -13,7 +13,7 @@
  *  lon2 (float): Longitude #2 to compare distance
  * 
  */
-function distance(float $lat1, float $lon1, float $lat2, float $lon2) {
+function distance(float $lat1, float $lon1, float $lat2, float $lon2): float {
     $theta = $lon1 - $lon2;
     $dist = sin(deg2rad($lat1)) * sin(deg2rad($lat2)) + cos(deg2rad($lat1)) * cos(deg2rad($lat2)) * cos(deg2rad($theta));
     $dist = acos($dist);
@@ -31,7 +31,7 @@ function distance(float $lat1, float $lon1, float $lat2, float $lon2) {
  *  lon (float): Longitude to compare distance
  *  result_count (int): Number of results to return
  */
-function get_closest_trucks(array $truck_data, float $lat, float $lon, int $result_count=5) {
+function get_closest_trucks(array $truck_data, float $lat, float $lon, int $result_count=5): array {
     foreach ($truck_data as $idx => $truck) {
         $truck_distance[$idx] = distance((float) $lat, (float) $lon, (float) $truck[TRUCK_LAT_COL], (float) $truck[TRUCK_LON_COL]);
     }
